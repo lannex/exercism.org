@@ -1,9 +1,8 @@
-object Names {
-    private val set = mutableSetOf<String>()
-    fun add(name: String) = set.add(name)
-}
-
 class Robot {
+    companion object {
+        private val names = mutableSetOf<String>()
+    }
+
     var name: String = ""
         get() {
             field = when (field == "") {
@@ -18,7 +17,7 @@ class Robot {
         val num = Array(3) { (0..9).random() }.joinToString("")
         val result = "$str$num"
 
-        return when (!Names.add(result)) {
+        return when (!names.add(result)) {
             true -> generateName()
             false -> result
         }

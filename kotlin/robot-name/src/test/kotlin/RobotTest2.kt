@@ -3,13 +3,13 @@ import kotlin.test.assertEquals
 import kotlin.test.assertNotEquals
 import kotlin.test.assertTrue
 
-class RobotTest {
+class RobotTest2 {
     companion object {
         val EXPECTED_ROBOT_NAME_PATTERN = Regex("[A-Z]{2}\\d{3}")
         private fun isValidName(name: String) = EXPECTED_ROBOT_NAME_PATTERN.matches(name)
     }
 
-    val robot = Robot()
+    val robot = Robot2()
 
     @Test
     fun hasName() {
@@ -18,7 +18,7 @@ class RobotTest {
 
     @Test
     fun differentRobotsHaveDifferentNames() {
-        assertNotEquals(robot.name, Robot().name)
+        assertNotEquals(robot.name, Robot2().name)
     }
 
     @Test
@@ -39,7 +39,7 @@ class RobotTest {
     @Test
     fun isRandom() {
         val iterations = 100000
-        val names = (0 until iterations).map { Robot().name }
+        val names = (0 until iterations).map { Robot2().name }
         assertEquals(iterations, names.size)
         assertEquals(iterations, names.distinct().size)
     }
