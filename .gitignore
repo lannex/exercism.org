@@ -20,6 +20,7 @@ Cargo.lock
 
 # python
 **/__pycache__/
+**/.pytest_cache/
 
 #
 **/.gradle/
