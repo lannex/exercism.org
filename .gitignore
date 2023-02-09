@@ -18,6 +18,9 @@ Cargo.lock
 **/dataSources/
 **/dataSources.local.xml
 
+# python
+**/__pycache__/
+
 #
 **/.gradle/
 **/build/
