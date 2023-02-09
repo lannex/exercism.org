@@ -1,0 +1,9 @@
+enum class Unit(val value: Long) {
+    OHMS(0),
+    KILOOHMS(1000),
+    MEGAOHMS(1_000_000),
+    GIGAOHMS(1_000_000_000),
+    TERAOHMS(1_000_000_000_000),
+    PETAOHMS(1_000_000_000_000_000),
+    EXAOHMS(1_000_000_000_000_000_000)
+}
