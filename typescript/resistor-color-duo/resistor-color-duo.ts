@@ -13,6 +13,6 @@ const colors = {
 
 type Colors = (keyof typeof colors)[];
 
-export function decodedValue([first, second]: Colors) {
+export function decodedValue([first, second]: Colors): number {
   return colors[first] * 10 + colors[second];
 }
