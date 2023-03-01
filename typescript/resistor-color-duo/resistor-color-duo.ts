@@ -1,4 +1,4 @@
-const colors = {
+const COLORS = {
   black: 0,
   brown: 1,
   red: 2,
@@ -11,8 +11,8 @@ const colors = {
   white: 9,
 } as const;
 
-type Colors = (keyof typeof colors)[];
+type Colors = (keyof typeof COLORS)[];
 
 export function decodedValue([first, second]: Colors): number {
-  return colors[first] * 10 + colors[second];
+  return COLORS[first] * 10 + COLORS[second];
 }
