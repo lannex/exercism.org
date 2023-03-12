@@ -1,3 +1,5 @@
 # Exercism
 
-🏋🏻 [exercism.org](https://exercism.org)
+🏋🏻 [Exercism.org](https://exercism.org)
+
+🔖 [Public Profile](https://exercism.org/profiles/lannex)
