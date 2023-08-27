@@ -7,4 +7,6 @@
   "jest.autoRun": {
     "watch": false
   }
+  // "jest.rootPath": "typescript",
+  // "jest.jestCommandLine": "npx jest --runInBand"
 }
