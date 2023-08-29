@@ -56,7 +56,7 @@ def approx_average_is_average(hand: list[int]) -> bool:
     mid_card = len(hand) // 2
     average = card_average(hand)
 
-    return first_and_last_average == average or hand[mid_card] == average
+    return average in (first_and_last_average, hand[mid_card])
 
 
 def average_even_is_average_odd(hand: list[int]) -> bool:
