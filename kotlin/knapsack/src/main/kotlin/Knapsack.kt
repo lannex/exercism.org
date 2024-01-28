@@ -10,13 +10,12 @@ fun knapsack(maximumWeight: Int, items: List<Item>): Int {
         (1..maximumWeight).forEach { n ->
             val prevValue = matrix[m - 1][n]
 
-            matrix[m][n] = if (weight > n) {
+            matrix[m][n] =
                 // If you can't add the current item, use a value from a previous item
-                prevValue
-            } else {
+                if (weight > n) prevValue
+
                 // Select the maximum value for adding the current item versus not adding it
-                maxOf(prevValue, matrix[m - 1][n - weight] + value)
-            }
+                else maxOf(prevValue, matrix[m - 1][n - weight] + value)
         }
     }
 
