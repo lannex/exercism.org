@@ -1,0 +1,9 @@
+[workspace]
+members = [
+  "rust/anagram",
+  "rust/clock",
+  "rust/gigasecond",
+  "rust/hello-world",
+  "rust/lucians-luscious-lasagna",
+  "rust/reverse-string",
+]
