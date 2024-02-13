@@ -6,4 +6,5 @@ members = [
   "rust/hello-world",
   "rust/lucians-luscious-lasagna",
   "rust/reverse-string",
+  "rust/space-age",
 ]
