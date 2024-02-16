@@ -2,7 +2,7 @@
 
 rm -rf kotlin/**/build kotlin/**/.gradle
 
-rm -rf rust/**/target rust/**/Cargo.lock
+rm -rf rust/**/target rust/**/Cargo.lock ./target .Cargo.lock
 
 rm -rf .pytest_cache python/**/__pycache__
 
